@@ -1,0 +1,51 @@
+\contentsline {chapter}{\numberline {1}Electrocinétique: cadre et concepts de base}{5}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Notions sur les phénomènes de conduction}{5}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Sens conventionnel du courant électrique}{5}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}Courant électrique}{6}{subsection.1.1.2}%
+\contentsline {subsection}{\numberline {1.1.3}Courant dans un circuit}{6}{subsection.1.1.3}%
+\contentsline {paragraph}{Ordre de grandeur de la vitesse des porteurs de charge}{6}{section*.2}%
+\contentsline {subsection}{\numberline {1.1.4}有源二端元件}{6}{subsection.1.1.4}%
+\contentsline {paragraph}{理想电源}{6}{section*.3}%
+\contentsline {paragraph}{实际电源}{6}{section*.4}%
+\contentsline {section}{\numberline {1.2}求解电路的基本定律}{10}{section.1.2}%
+\contentsline {paragraph}{基尔霍夫定律}{10}{section*.8}%
+\contentsline {subparagraph}{节点定律(Loi des nœud )}{10}{section*.9}%
+\contentsline {subparagraph}{回路电压定律(Loi des mailles)}{10}{section*.10}%
+\contentsline {chapter}{\numberline {2}Circuit linéaire du premier ordre}{11}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Exemple expérimental}{11}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Montage}{11}{subsection.2.1.1}%
+\contentsline {section}{\numberline {2.2}暂态}{12}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}RC电路}{12}{subsection.2.2.1}%
+\contentsline {paragraph}{电容的欧姆定律}{12}{section*.12}%
+\contentsline {subsubsection}{RC串联充电}{12}{section*.13}%
+\contentsline {chapter}{\numberline {3}Régime sinusoïdal forcé}{15}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Représentation complexe du signal sinusoïdale}{15}{section.3.1}%
+\contentsline {paragraph}{Dérivation}{16}{section*.16}%
+\contentsline {paragraph}{Intégration: primitive sinusoïdale}{16}{section*.17}%
+\contentsline {paragraph}{三角信号函数乘法}{17}{section*.18}%
+\contentsline {section}{\numberline {3.2}Utilisation du plan complexe}{17}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Puissance moyenne–Facteur de puissance}{18}{section.3.3}%
+\contentsline {chapter}{\numberline {4}Étude du circuit RLC série-Résonances}{21}{chapter.4}%
+\contentsline {section}{\numberline {4.1}电流的谐振}{22}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}得到电流的复振幅关于约化角频率的函数}{23}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}振幅与相位差关于约化角频率的函数图像}{25}{subsection.4.1.2}%
+\contentsline {section}{\numberline {4.2}电荷的谐振}{31}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Circuits linéaires en régime sinusoïdal}{35}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Régime forcé d’un circuit linéaire}{35}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Étude du régime sinusoïdal forcé}{35}{subsection.4.3.2}%
+\contentsline {chapter}{\numberline {5}Analyse de Fourier d'un signal périodique}{37}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Filtrage}{41}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Fonction de transfert}{41}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Diagramme de Bode}{42}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Filtres du premier ordre}{43}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}Filtre passe-bas}{44}{subsection.6.3.1}%
+\contentsline {section}{\numberline {6.4}Filtres du deuxième ordre}{47}{section.6.4}%
+\contentsline {subsection}{\numberline {6.4.1}Filtre passe-haute}{47}{subsection.6.4.1}%
+\contentsline {subsection}{\numberline {6.4.2}Filtre coupe-bande}{49}{subsection.6.4.2}%
+\contentsline {subsection}{\numberline {6.4.3}Filtres d'ordre plus élevé}{52}{subsection.6.4.3}%
+\contentsline {section}{\numberline {6.5}Mise en cascade de filtres}{52}{section.6.5}%
+\contentsline {subsection}{\numberline {6.5.1}Impédances d'entrée et de sortie}{52}{subsection.6.5.1}%
+\contentsline {subsection}{\numberline {6.5.2}Mise en cascade}{53}{subsection.6.5.2}%
+\contentsline {chapter}{\numberline {7}Classical Mechanics}{55}{chapter.7}%
+\contentsline {section}{\numberline {7.1}The Moving Trihedral(Accompanying Dreibein)-the Frenet Formulas}{55}{section.7.1}%
+\contentsline {paragraph}{Darbaux rotation vecteur}{55}{section*.45}%
