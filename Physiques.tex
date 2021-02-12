@@ -31,6 +31,271 @@
 \begin{document}
 \maketitle
 \tableofcontents
+\chapter{Mathématiques préparations}
+\section{Transformation of Coordinates (Rotations)}
+Let $\Sigma, \bar{\Sigma}$ be two systems of coordinates specified by the orthonormal basis vectors:
+$$
+\begin{array}{l}
+\qquad \mathbf{e}_{1}, \mathbf{e}_{2}, \mathbf{e}_{3} \quad \text { and } \quad \overline{\mathbf{e}}_{1}, \overline{\mathbf{e}}_{2}, \overline{\mathbf{e}}_{3}, \text { respectively }.
+\end{array}
+$$
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=1]{image//Mathematiques preparations//Transformation of Coordinates (Rotations)//1}
+\end{figure}
+
+Translations are relatively uninteresting. We therefore assume that the origins of $\Sigma$ and $\bar{\Sigma}$ coincide. Let us now consider an arbitrarily chosen position vector $\mathbf{r}$ :
+$$
+\begin{array}{ll}
+\mathbf{r}=\left(x_{1}, x_{2}, x_{3}\right) \text { in } \Sigma & {[\mathbf{r}(\Sigma)]} \\
+\mathbf{r}=\left(\bar{x}_{1}, \bar{x}_{2}, \bar{x}_{3}\right) \text { in } \bar{\Sigma} & {[\mathbf{r}(\bar{\Sigma})]}
+\end{array}
+$$
+Let us presume that the elements $x_{i}$ in $\Sigma$ are known while the elements $\bar{x}_{j}$ in $\bar{\Sigma}$ are to be determined. $\mathbf{r}$ itself is of course independent of the special choice of the system of coordinates, both with respect to direction as well as magnitude.
+
+Therefore:
+\begin{equation}
+\sum_{j=1}^{3} x_{j} \mathbf{e}_{j}=\sum_{j=1}^{3} \bar{x}_{j} \overline{\mathbf{e}}_{j}\label{1}
+\end{equation}
+The basis vectors $\overline{\mathbf{e}}_{j}$ can be represented in $\Sigma$ :
+$$
+\overline{\mathbf{e}}_{j}=\sum_{k} d_{j k} \mathbf{e}_{k}
+$$
+We determine the expansion coefficients $d_{j k}$ by scalar multiplication of this equation by $\mathbf{e}_{m}$ :
+$$
+d_{j m}=\overline{\mathbf{e}}_{j} \cdot \mathbf{e}_{m}=\cos \varphi_{j m}
+$$
+$\varphi_{i m}$ is the angle enclosed by the $j$ -th axis in $\bar{\Sigma}$ and the $m$ -th axis in $\Sigma$. The ensemble of real numbers $d_{j m}$ defines the $(3 \times 3)$-rotation matrix $D$ :
+$$
+D=\left(d_{i j}=\cos \varphi_{i j}\right)=\left(\begin{array}{lll}
+d_{11} & d_{12} & d_{13} \\
+d_{21} & d_{22} & d_{23} \\
+d_{31} & d_{32} & d_{33}
+\end{array}\right)
+$$
+Some important properties of the rotation matrix are the direct consequences of the orthonormality of the basis vectors $\overline{\mathbf{e}}_{i}$:
+
+$$
+\overline{\mathbf{e}}_{i} \cdot \overline{\mathbf{e}}_{j}=\delta_{i j}=\sum_{k, m} d_{i k} d_{j m}\left(\mathbf{e}_{k} \cdot \mathbf{e}_{m}\right)=\sum_{m} d_{i m} d_{j m}
+$$
+This refers to the scalar product of two row vectors of the rotation matrix $D$. Hence the rows of the rotation matrix $D$ are obviously orthonormalized:
+\begin{equation}
+\sum_{m} d_{i m} d_{j m}=\sum_{m} \cos \varphi_{i m} \cos \varphi_{j m}=\delta_{i j}\label{4}
+\end{equation}
+To get more information about $D$ we multiply $\ref{1}$ scalarly by the basis vector $\overline{\mathbf{e}}_{i}$
+$$
+\bar{x}_{i}=\sum_{j=1}^{3} x_{j}\left(\mathbf{e}_{j} \cdot \overline{\mathbf{e}}_{i}\right)=\sum_{j=1}^{3} \cos \varphi_{i j} x_{j} ; \quad i=1,2,3
+$$
+In matrix notation this linear system of equations reads:
+\begin{equation}
+\left(\begin{array}{l}
+\bar{x}_{1} \\
+\bar{x}_{2} \\
+\bar{x}_{3}
+\end{array}\right)=\left(\begin{array}{lll}
+d_{11} & d_{12} & d_{13} \\
+d_{21} & d_{22} & d_{23} \\
+d_{31} & d_{32} & d_{33}
+\end{array}\right)\left(\begin{array}{l}
+x_{1} \\
+x_{2} \\
+x_{3}
+\end{array}\right) \Longleftrightarrow \mathbf{r}(\bar{\Sigma})=D \cdot \mathbf{r}(\Sigma)
+\label{2}
+\end{equation}
+Inspecting this expression component by component we can satisfy ourselves of the correctness of this relation. Hence $D$ obviously describes the rotation $\Sigma \rightarrow \bar{\Sigma}$. We introduce via
+\begin{equation}
+D^{-1} D=D D^{-1}=\mathfrak{1}\label{3}
+\end{equation}
+the inverse matrix $D^{-1}$ belonging to $D$ and apply this to $\ref{2}$ :
+$$
+\begin{array}{c}
+D^{-1} \mathbf{r}(\bar{\Sigma})=D^{-1} D \mathbf{r}(\Sigma)=\mathfrak{1} \mathbf{r}(\Sigma)=\mathbf{r}(\Sigma) \\
+D^{-1}\left(\begin{array}{l}
+\bar{x}_{1} \\
+\bar{x}_{2} \\
+\bar{x}_{3}
+\end{array}\right)=D^{-1} D\left(\begin{array}{l}
+x_{1} \\
+x_{2} \\
+x_{3}
+\end{array}\right)=\mathfrak{1}\left(\begin{array}{l}
+x_{1} \\
+x_{2} \\
+x_{3}
+\end{array}\right)=\left(\begin{array}{l}
+x_{1} \\
+x_{2} \\
+x_{3}
+\end{array}\right)
+\end{array}
+$$
+$D^{-1}$ describes apparently the back rotation from $\bar{\Sigma}$ to $\Sigma .$ We get the elements of $D^{-1}$ by scalarly multiplying $\ref{1}$ now by $\mathbf{e}_{i}:$
+$$
+x_{i}=\sum_{j=1}^{3} \bar{x}_{j}\left(\overline{\mathbf{e}}_{j} \cdot \mathbf{e}_{i}\right)=\sum_{j=1}^{3} \cos \varphi_{j i} \bar{x}_{j} ; \quad i=1,2,3,
+$$
+$$
+\left(\begin{array}{l}
+x_{1} \\
+x_{2} \\
+x_{3}
+\end{array}\right)=\left(\begin{array}{lll}
+d_{11} & d_{21} & d_{31} \\
+d_{12} & d_{22} & d_{32} \\
+d_{13} & d_{23} & d_{33}
+\end{array}\right)\left(\begin{array}{l}
+\bar{x}_{1} \\
+\bar{x}_{2} \\
+\bar{x}_{3}
+\end{array}\right) \Longleftrightarrow \mathbf{r}(\Sigma)=D^{-1} \mathbf{r}(\bar{\Sigma})
+$$
+$D^{-1}$ thus results from $D$ by interchanging rows and columns and therefore $D^{-1}$ is the transposed matrix of $D$ :
+$$
+D^{-1}=D^{T}=\left(\left(d^{-1}\right)_{i j}=d_{j i}\right)
+$$
+From $\ref{3}$ we then get the relations:
+$$
+\begin{aligned}
+\delta_{i j} &=\sum_{m} d_{i m}\left(d^{-1}\right)_{m j}=\sum_{m} d_{i m} d_{j m} \\
+\delta_{i j} &=\sum_{m}\left(d^{-1}\right)_{i m} d_{m j}=\sum_{m} d_{m i} d_{m j}
+\end{aligned}
+$$
+The first equation is identical to $\ref{4}$ expressing the orthonormality of the rows
+of the rotation matrix which is already known. The second equation tells us that {\bf the
+columns, too, are orthonormal.}
+
+\section{Determinants}
+\begin{dfn}
+If
+$$
+A=\left(a_{i j}\right)=\left(\begin{array}{ccc}
+a_{11} & \ldots & a_{1 n} \\
+\vdots & & \vdots \\
+a_{n 1} & \ldots & a_{n n}
+\end{array}\right)
+$$
+is an $(n \times n)$-matrix then one defines as 'determinant' of $A$ the following number:
+\begin{equation}
+\operatorname{det} A=\left|\begin{array}{ccc}
+a_{11} & \ldots & a_{1 n} \\
+\vdots & & \vdots \\
+a_{n 1} & \ldots & a_{n n}
+\end{array}\right|=\sum_{P}(\operatorname{sign} P) a_{1 p(1)} \cdot a_{2 p(2)} \cdot \ldots a_{n p(n)}\label{5}
+\end{equation}
+Here the sequence of numbers
+$$
+[p(1), \ldots, p(n)] \equiv P(1,2, \ldots, n)
+$$
+represents a special permutation of the natural sequence
+$$
+(1,2, \ldots, n)
+$$
+The sum contains all the thinkable permutations $P,$ including the identity. The expression in $\ref{5}$ thus consists of $n !$ summands. Each summand obviously contains exactly one element from each row and one element from each column of the $\operatorname{matrix} A.$
+
+$\operatorname{sign} P:$ sign of the permutation $P .$
+
+Each permutation can be realized successively by pairwise permutation of neighboring elements (transposition). {\bf The sign of the permutation is positive if the number of transpositions necessary to reach the respective permuted sequence of numbers is even.} Otherwise it is negative.
+
+Example
+$$
+P(123)=(231)
+$$
+realizable by two transpositions:
+$$
+\begin{array}{l}
+\text { (123) } \rightarrow(213) \rightarrow(231) \\
+\Longrightarrow \operatorname{sign} P=+1
+\end{array}
+$$
+\end{dfn}
+
+The general definition $\ref{5}$ looks rather complicated. Let us therefore inspect how one can calculate det $A$ explicitly.
+\begin{equation}
+\begin{array}{c}
+n=1: \quad \operatorname{det} A=\left|a_{11}\right|=a_{11} \\
+n=2:\operatorname{det} A=\left|\begin{array}{cc}
+a_{11} & a_{12} \\
+a_{21} & a_{22}
+\end{array}\right|=\operatorname{sign}(12) a_{11} a_{22}+\operatorname{sign}(21) a_{12} a_{21}
+=a_{11} a_{22}-a_{12} a_{21}
+\end{array}\label{6}
+\end{equation}
+{\bf Scheme (Rule of Thumb)}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=1]{image//Mathematiques preparations//Determinant//1}
+\end{figure}
+The connecting lines symbolize the products of the various summands, solid line with positive sign, broken line with negative sign.
+
+
+n=3:
+$$
+\operatorname{det} A=\left|\begin{array}{lll}
+a_{11} & a_{12} & a_{13} \\
+a_{21} & a_{22} & a_{23} \\
+a_{31} & a_{32} & a_{33}
+\end{array}\right|
+$$
+
+There appear $3 !=6$ summands:
+\begin{tabular}{ll}
+	$P$ & $\operatorname{sign} P$ \\
+	\hline 123 & +1 \\
+	132 & -1 \\
+	213 & -1 \\
+	231 & +1 \\
+	312 & +1 \\
+	321 & -1
+\end{tabular}.
+
+
+This means:
+$$
+\begin{aligned}
+\operatorname{det} A=& a_{11}\left(a_{22} a_{33}-a_{23} a_{32}\right)-a_{12}\left(a_{21} a_{33}-a_{23} a_{31}\right)+\\
+&+a_{13}\left(a_{21} a_{32}-a_{22} a_{31}\right)
+\end{aligned}
+$$
+With $\ref{6}$ this expression can also be written in the following form:
+$$
+\operatorname{det} A=a_{11}\left|\begin{array}{ll}
+a_{22} & a_{23} \\
+a_{32} & a_{33}
+\end{array}\right|-a_{12}\left|\begin{array}{ll}
+a_{21} & a_{23} \\
+a_{31} & a_{33}
+\end{array}\right|+a_{13}\left|\begin{array}{ll}
+a_{21} & a_{22} \\
+a_{31} & a_{32}
+\end{array}\right|
+$$
+This is called the determinant expansion with respect to the first row (see $\ref{7}$).
+
+{\bf Scheme (Sarrus-Rule)}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=1]{image//Mathematiques preparations//Determinant//2}
+\end{figure}
+It goes without saying that for $n \geq 4$ the representation becomes very soon very much more complicated. The majority of applications in Theoretical Physics, however, fortunately manages with $n \leq 3 .$ If not, the so-called expansion theorem helps, which we quote here without proof:
+\begin{thm} Expansion with respect to a row
+\begin{equation}
+\operatorname{det} A=a_{i 1} U_{i 1}+a_{i 2} U_{i 2}+\ldots+a_{i n} U_{i n}=\sum_{j=1}^{n} a_{i j} U_{i j}\label{7}
+\end{equation}
+
+
+$U_{i j}=(-1)^{i+j} A_{i j}: \text { algebraic complement to } a_{i j},$
+
+
+$A_{i j}:$ subdeterminant $=$ determinant of the $((n-1) \times(n-1))$-matrix originating from $A$ by eliminating the $i$-th row and the $j$-th column.
+\end{thm}
+The calculation of the $(n \times n)$-determinant is replaced by the expansion rule to that of $((n-1) \times(n-1))$-determinants. To the latter one can apply again the expansion theorem thereby reducing the dimensions of the remaining determinants further on. After $(n-2)$-fold expansion $\ref{6}$ comes into operation. The practical evaluation appears to be the simpler the more zeros are in the row of expansion. In this respect, in order to enhance the number of zeros in the row, the calculation rules for equivalent rearrangings of the determinant may be helpful.
+
+
+
+
+
+
+
 	\chapter{Electrocinétique: cadre et concepts de base}
 	\section{Notions sur les phénomènes de conduction}
 	\subsection{Sens conventionnel du courant électrique}
@@ -57,12 +322,12 @@
 Thevenin等效模型
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.1]{Electrocinetique cadre et concepts de base//1}
+	\includegraphics[scale=0.1]{image//Electrocinetique cadre et concepts de base//1}
 \end{figure}
 Norton等效模型
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.1]{Electrocinetique cadre et concepts de base//2}
+	\includegraphics[scale=0.1]{image//Electrocinetique cadre et concepts de base//2}
 \end{figure}
 
 
@@ -88,7 +353,7 @@ $$r_{eq,Th}=r_{eq,No};\quad E_{Th}=I_{No}\cdot r_{eq}$$ }
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.4]{Electrocinetique cadre et concepts de base//3}
+	\includegraphics[scale=0.4]{image//Electrocinetique cadre et concepts de base//3}
 \end{figure}
 \textbf{注意初始的A，B两点可以看作一个完整回路的引出点.}
 
@@ -106,7 +371,7 @@ On cherche a observer, puis prévoir par le  calcul, le comportement du montage 
 lorsqu'il est alimenté par une tension constante délivrée par un générateur basss fréquence, nommé dans la suite par son acronyme GBF. On observe simultanément(同时) les tensions délivrées par le GBF et aux bornes du condensateur(电容器) sur les deux voies d'un oscilloscope(示波器).
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.7]{Circuit lineaire du premier ordre//1}
+	\includegraphics[scale=0.7]{image//Circuit lineaire du premier ordre//1}
 \end{figure}
 
 \section{暂态}
@@ -132,13 +397,13 @@ $u(0^+)=0$ V.\textbf{而此时根据电容"通交流阻直流"的特性，突然
 等效电路图为：
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.2]{Circuit lineaire du premier ordre//2}
+	\includegraphics[scale=0.2]{image//Circuit lineaire du premier ordre//2}
 \end{figure}
 
 接下来取$t=0^+$到$\infty$中的任意一个时刻的电路图作为代表分析电路得到微分方程：
 \begin{figure}[H]
 	\centering
-		\includegraphics[scale=0.1]{Circuit lineaire du premier ordre//3}
+		\includegraphics[scale=0.1]{image//Circuit lineaire du premier ordre//3}
 \end{figure}
 
 
@@ -267,7 +532,7 @@ $$
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=1]{Regime sinusoidal force//1}
+	\includegraphics[scale=1]{image//Regime sinusoidal force//1}
 \end{figure}
 注意$\arctan$对应角在]-$\frac{\pi}{2}$,$\frac{\pi}{2}$[之间。
 \section{Puissance moyenne–Facteur de puissance}
@@ -290,7 +555,7 @@ $$
 En régime harmonique, la puissance moyenne est appelée puissance active. Elle s'exprime en watt (symbole : W).
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=1]{Regime sinusoidal force//2}
+	\includegraphics[scale=1]{image//Regime sinusoidal force//2}
 \end{figure}
 平均功率其实是一个包含了电流和电压的振幅信息和相位差信息的“宝藏”。
 
@@ -323,7 +588,7 @@ transitoire ayant disparu plus ou moins rapidement.
 我们研究的对象是一个RLC电路
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.2]{Etude du circuit RLC serie-Resonances//1}
+	\includegraphics[scale=0.1]{image//Etude du circuit RLC serie-Resonances//1}
 \end{figure}
 我们想要通过从低到高调整电源电压函数频率的方式(即“扫频”)来观察并研究对应的电路中的一些元件两端的电压函数的振幅和这些电压函数与电源输入的电压函数之间相位差的变化情况。(动机是验证谐振现象的两个关键描述：振幅最大和输入频率接近本征频率)
 
@@ -331,7 +596,7 @@ transitoire ayant disparu plus ou moins rapidement.
 我们先来看看扫频的实验现象(这里我们看$u_R$两端的电压(看电压是因为示波器测的是电压信号)就可以反映电流的幅值变化和与电源电压的相位差变化)
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.2]{Etude du circuit RLC serie-Resonances//2}
+	\includegraphics[scale=0.1]{image//Etude du circuit RLC serie-Resonances//2}
 \end{figure}
 \subsection{得到电流的复振幅关于约化角频率的函数}
 在具体的研究振幅和相位差的问题之前,我们需要在此处认清几个概念.
@@ -434,19 +699,19 @@ $\arctan$这个函数,它定义域为$\mathbb{R}$，周期为$\pi$,然而值域�
 在低频时，由于此时电容的复阻抗趋于无穷，电感的复阻抗趋于0，故我们将电容视为断开的开关，电感视为导线；在高频时则相反，电容视为导线，电感视为断开的开关。等效电路图如下所示
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.15]{Etude du circuit RLC serie-Resonances//3}
+	\includegraphics[scale=0.15]{image//Etude du circuit RLC serie-Resonances//3}
 \end{figure}
 我们有$i_0\approx 0$ 及$i_{\infty}\approx0$,对于相位差，我们需要根据等效电路图做出Fresnel表示：
 
 我们先交代如何在Fresnel图中表示出相位差：首先我们要确定一个参考方向轴(如下图中的$\underline{i}$)，这个可以只起方向参考的作用而不用管模长是否符合实际，然后我们要通过已知的相对参考方向相位差和相对模长作出已知向量($\underline{u_R}$,$\underline{u_L}$.$\underline{u_C}$)，最后由矢量合成得到我们需要的向量($\underline{e}$)，然后相位差就是二者对应向量的夹角，方向从减数对应的向量指向被减数对应的向量，符号取逆时针为正。
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.2]{Etude du circuit RLC serie-Resonances//4}
+	\includegraphics[scale=0.2]{image//Etude du circuit RLC serie-Resonances//4}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.2]{Etude du circuit RLC serie-Resonances//5}
+	\includegraphics[scale=0.2]{image//Etude du circuit RLC serie-Resonances//5}
 \end{figure}
 由上图可知$\phi_{i}\in ]\frac{-\pi}{2},\frac{\pi}{2}[$,所以$\phi_{i}$的表达式中$k=0$。
 
@@ -552,14 +817,14 @@ $$
 下面是matlab作图及代码：
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.7]{Etude du circuit RLC serie-Resonances//6}
+	\includegraphics[scale=0.7]{image//Etude du circuit RLC serie-Resonances//6}
 \end{figure}
 
 
 
 
 
-\begin{lstlisting}[language=matlab]
+\begin{lstlisting}[language=Matlab]
 clc,clear;
 E=2;
 R=10;
@@ -582,7 +847,7 @@ subplot(2,1,2),plot(x,phi_i,'g'),title('{\phi_i}(x)'),xlabel('x'),ylabel('{\phi_
 La réponse en charge, indiquée par la tension  $u_C(t)=\frac{q(t)}{C}$ aux bornes du condensateur
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.7]{Etude du circuit RLC serie-Resonances//7}
+	\includegraphics[scale=0.7]{image//Etude du circuit RLC serie-Resonances//7}
 \end{figure}
 由于$\underline{q}(t)=\int \underline{i}(t)=\frac{1}{j\omega}\underline{i}(t)$
 我们有：$\underline{q}=\frac{1}{j\omega}\underline{I}$
@@ -627,7 +892,7 @@ aux bornes de la capacité.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=1]{Etude du circuit RLC serie-Resonances//8}
+	\includegraphics[scale=1]{image//Etude du circuit RLC serie-Resonances//8}
 \end{figure}
 
 下面我们研究谐振的发生条件及情况：
@@ -700,7 +965,7 @@ de $Q$
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.8]{Etude du circuit RLC serie-Resonances//9}
+	\includegraphics[scale=0.8]{image//Etude du circuit RLC serie-Resonances//9}
 \end{figure}
 \section{Circuits linéaires en régime sinusoïdal}
 \subsection{Régime forcé d’un circuit linéaire}
@@ -731,7 +996,7 @@ $$
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=1]{Etude du circuit RLC serie-Resonances//10}
+	\includegraphics[scale=1]{image//Etude du circuit RLC serie-Resonances//10}
 \end{figure}
 \chapter{Analyse de Fourier d'un signal périodique}
 \begin{framed}{\textbf{定理}}
@@ -777,7 +1042,7 @@ $$
 Le spectre de la fonction $f$ est obtenu en portant en ordonnée l'amplitude des harmoniques $(c_n)$ et abscisse les pulsations(ou fréquences) correspondantes.On a alors \textbf{le diagramme en bâtons} suivant:
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.1]{Analyse de Fourier d'un signal periodique//1}
+	\includegraphics[scale=0.1]{image//Analyse de Fourier d'un signal periodique//1}
 \end{figure}
 
 \textbf{Signal carré}
@@ -800,7 +1065,7 @@ $$
 $$
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.1]{Analyse de Fourier d'un signal periodique//2}
+	\includegraphics[scale=0.1]{image//Analyse de Fourier d'un signal periodique//2}
 \end{figure}
 
 
@@ -818,7 +1083,7 @@ On considère un quadripôle(c'est-à-dire un dipôle avec 2 bornes d'entrée et
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.08]{Filtrage//1}
+	\includegraphics[scale=0.08]{image//Filtrage//1}
 \end{figure}
 
 
@@ -879,12 +1144,12 @@ On s'intéresse au circuit $LR$ suivant.La tension de sortie est la tension $u_r
 \end{framed}
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.13]{Filtrage//2}
+	\includegraphics[scale=0.13]{image//Filtrage//2}
 \end{figure}
 我们从\textbf{comportement asymptomatique}开始研究，这是为了首先确定la nature du filtre.我们画出在低频和高频时的等效电路图：
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.15]{Filtrage//3}
+	\includegraphics[scale=0.15]{image//Filtrage//3}
 \end{figure}
 可以看到低频的信号可以输出，而高频的信号输出为0从而失去影响，从而该电路的确是一个“低通”滤波器。
 
@@ -941,7 +1206,7 @@ $$
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.16]{Filtrage//4}
+	\includegraphics[scale=0.16]{image//Filtrage//4}
 \end{figure}
 
 最后我们看看低通滤波器对高频的信号的处理特性(低频的信号通“过”了，滤波器所起的作用看不出什么特点)。其实对高频段的信号，滤波器表现得像是一个“赝积分器”(pseudo-intégrateur).
@@ -961,7 +1226,7 @@ On s'intéresse dans le circuit suivant à la réponse en tension aux bornes de 
 \end{framed}
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.16]{Filtrage//5}
+	\includegraphics[scale=0.16]{image//Filtrage//5}
 \end{figure}
 \begin{itemize}
 	\item \textbf{Comportement asymptotique}
@@ -969,7 +1234,7 @@ On s'intéresse dans le circuit suivant à la réponse en tension aux bornes de 
 	On a les ciruits équivalents suivants :
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.16]{Filtrage//6}
+	\includegraphics[scale=0.16]{image//Filtrage//6}
 \end{figure}
 低频时输出电压为0，高频时有输出电压，所以这是一个高通滤波器。
 
@@ -1025,7 +1290,7 @@ $$
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.15]{Filtrage//7}
+	\includegraphics[scale=0.15]{image//Filtrage//7}
 \end{figure}
 
 \subsection{Filtre coupe-bande}
@@ -1034,7 +1299,7 @@ $$
 \end{framed}
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.16]{Filtrage//8}
+	\includegraphics[scale=0.16]{image//Filtrage//8}
 \end{figure}
 \begin{itemize}
 	\item \textbf{Comportement asymptotique}
@@ -1042,7 +1307,7 @@ $$
 	On a les ciruits équivalents suivants :
 	\begin{figure}[H]
 		\centering
-		\includegraphics[scale=0.16]{Filtrage//9}
+		\includegraphics[scale=0.16]{image//Filtrage//9}
 	\end{figure}
 此时无论高频低频都有信号传出，只是中间可能有部分被阻断，所以叫“带阻”。
 
@@ -1105,7 +1370,7 @@ $$
 \end{itemize}
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.15]{Filtrage//10}
+	\includegraphics[scale=0.15]{image//Filtrage//10}
 \end{figure}
 
 \begin{framed}
@@ -1138,7 +1403,7 @@ $\underline{Z}_e=\frac{\underline{e}}{\underline{i}_e}$.Ainsi, vue de l'entrée 
 La sortie d'un quadripôle se comporte pour la charge(le reste du circuit) comme un dipôle actif dont l'impédance du générateur de Thévenin équivalent est appelée impudence de sortie $\underline{Z}_s$.Elle ne dépende que de la constitution du dipôle(指从输出端的角度看，四级子是一个可等效为戴维南电源的二端元件).
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.15]{Filtrage//11}
+	\includegraphics[scale=0.15]{image//Filtrage//11}
 \end{figure}
 \subsection{Mise en cascade}
 \begin{framed}{\textbf{框架}}
@@ -1146,7 +1411,7 @@ La sortie d'un quadripôle se comporte pour la charge(le reste du circuit) comme
 \end{framed}
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.15]{Filtrage//12}
+	\includegraphics[scale=0.15]{image//Filtrage//12}
 \end{figure}
 On appelle $G_1$ et $G_2$ les gains en tension à vide des 2 filtres.
 \begin{framed}
@@ -1198,4 +1463,268 @@ The set of unit vectors moves along with the mass point : it is therefore also c
 \paragraph{Darbaux rotation vecteur}
 The Fernet's formulas can be formulated in a very elegant way.To this end, we define a vector $\mathbf{D}$ as follows:
 $$\mathbf{D}=\tau \mathbf{T}+\kappa \mathbf{B}$$
+
+\section{Systems of Point Masses;Collisions}
+
+\subsection{Centre of Mass}
+We consider $N$ point masses with position vectors $r_{i}$ and define as the centre of mass the point with the position vector
+\begin{equation}
+\boldsymbol{R}_{\mathrm{S}}=\frac{\sum_{i} m_{i} \boldsymbol{r}_{i}}{\sum_{i} m_{i}}=\frac{1}{M} \sum_{i} m_{i} \boldsymbol{r}_{i}\label{8}
+\end{equation}
+where $M=\sum m_{i}$ is the total mass of all $N$ particles.
+When the masses $m_{i}$ move with the velocities $\boldsymbol{v}_{i}=\mathrm{d} \boldsymbol{r}_{i} / \mathrm{d} t$ we define the velocity $\boldsymbol{v_{\mathrm{S}}}$ of the centre of mass as
+\begin{equation}
+\boldsymbol{v_{\mathrm{S}}}=\frac{\mathrm{d} \boldsymbol{R}_{\mathrm{S}}}{\mathrm{d} t}=\frac{1}{M} \sum_{i} m_{i} \boldsymbol{v}_{i}\label{9}
+\end{equation}
+With the momenta $\boldsymbol{p}_{i}=m_{i} \cdot \boldsymbol{v}_{i},$ $\ref{9}$ can be also expressed by the total momentum $\boldsymbol{P}=\sum \boldsymbol{p}_{i}$ as
+\begin{equation}
+\boldsymbol{P}=M \boldsymbol{v_{\mathrm{S}}}
+\end{equation}
+If no external forces are acting on the particles, we need to regard only internal forces, i.e. interactions between the particles. Such a system without external forces is called a {\bf closed system.}
+From the Newtonian law $\boldsymbol{F}_{i k}=-\boldsymbol{F}_{k i}$ it follows: $\sum_{i} \sum_{k \neq i} \boldsymbol{F}_{i k}=\boldsymbol{0}.${\bf In a closed system the vector sum of all forces is zero.}
+
+With $F_{i}=\sum_{k \neq i} F_{i k}$ and $F_{i}=\mathrm{d} \boldsymbol{p}_{i} / \mathrm{d} t$, the total momentum of the system 
+\begin{equation}
+\boldsymbol{P}=\sum \boldsymbol{p}_{i}=\text { const }
+\end{equation}
+Since $\boldsymbol{P}$ is the momentum of the centre of mass we can state:
+The centre of mass of a closed system moves with constant momentum. This implies that its velocity does not change.
+If an external total force $\boldsymbol{F} \neq \mathbf{0}$ acts onto the system we can write
+\begin{equation}
+\boldsymbol{F}=\frac{\mathrm{d}}{\mathrm{d} t} \sum \boldsymbol{p}_{i}=\frac{\mathrm{d} \boldsymbol{P}}{\mathrm{d} t}.
+\end{equation}
+
+With the acceleration of the centre of mass $\boldsymbol{a_{\mathrm{S}}}=d \boldsymbol{v_{\mathrm{S}}} / \mathrm{d} t$ we obtain
+\begin{equation}
+\boldsymbol{F}=M \boldsymbol{a_{\mathrm{S}}}
+\end{equation}
+The centre of mass of an arbitrary system of particles moves in the same way as a body with the total mass $M=\sum m_{i}$ would move under the action of the external force $\boldsymbol{F}$.
+
+Often it is useful to choose a coordinate system with the centre of mass as origin, which moves with the velocity $\boldsymbol{v_{\mathrm{S}}}$ of the centre of mass against the fixed laboratory system. Such a system is called {\bf the centre of mass system (CM-system).}
+
+The position vectors $\boldsymbol{r}_{i}$ in the lab-system are related to the position vectors $\boldsymbol{r}_{i\mathrm{S}}$ in the CM-system by
+\begin{equation}
+\boldsymbol{r}_{i}=\boldsymbol{r}_{i\mathrm{S}}+\boldsymbol{R}_{\mathrm{S}}\label{15}
+\end{equation}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.7]{image//Systems of Point Masses//1}
+	\caption{Definition of center of mass}
+\end{figure}
+Inserting into $\ref{8}$ gives
+$$\begin{aligned}
+	\sum_{i} m_{i} \boldsymbol{r}_{i\mathrm{S}}=& \sum_{i} m_{i}\left(\boldsymbol{r}_{i}-\boldsymbol{R}_{\mathrm{S}}\right) \\
+	=& \sum_{i} m_{i} \boldsymbol{r}_{i}-\boldsymbol{R}_{\mathrm{S}} \sum_{i} m_{i}=\mathbf{0}. \\
+\end{aligned}$$
+\begin{equation}
+\sum m_{i} \boldsymbol{r}_{i\mathrm{S}}=\mathbf{0}
+\end{equation}
+ This implies that in the CM-system the position vector $\boldsymbol{R}_{\mathrm{S}}$ of the centre-of-mass is $\boldsymbol{R}_{\mathrm{S}}=(1 / M) \sum m_{i} \boldsymbol{r}_{i\mathrm{S}}=\mathbf{0}.$
+
+The relation between the velocity $\boldsymbol{v_{i}}$ in the lab-system and $\boldsymbol{v_{\mathrm{s}}}$ in the CM-system is
+\begin{equation}
+\boldsymbol{v}_{i}=\boldsymbol{v}_{\mathrm{S}}+\boldsymbol{V}_{\mathrm{S}}
+\end{equation}
+which can be verified by differentiation of $\ref{15}$. For the momenta we therefore get
+\begin{equation}
+\sum_{l} m_{i} v_{i S}=\sum_{i} p_{\mathrm{s}}=0.
+\end{equation}
+The sum of all momenta in the CM-system is always zero.
+
+For a closed system of two masses $m_{1}$ and $m_{2}$ the total kinetic energy in the lab-system is
+$$
+\begin{aligned}
+E_{\mathrm{kin}}=& \frac{1}{2} m_{1} v_{1}^{2}+\frac{1}{2} m_{2} v_{2}^{2} \\
+=& \frac{1}{2}\left(m_{1} v_{1\mathrm{S}}^{2}+m_{2} v_{2\mathrm{S}}^{2}\right)+\frac{1}{2}\left(m_{1}+m_{2}\right) V_{\mathrm{S}}^{2} \\
+&+\left(m_{1} \boldsymbol{v_{1\mathrm{S}}}+m_{2} \boldsymbol{v_{2\mathrm{S}}}\right) \cdot \boldsymbol{V}_{\mathrm{S}}
+\end{aligned}
+$$
+The last term is zero because $\boldsymbol{p_{1\mathrm{S}}}+\boldsymbol{p_{2\mathrm{S}}}=\boldsymbol{0}$ and we obtain:
+\begin{equation}
+E_{\mathrm{kin}}=E_{\mathrm{kin}}^{\mathrm{iS})}+\frac{1}{2} M V_{\mathrm{S}}^{2}
+\end{equation}
+In the Lab-system the kinetic energy of a closed system can be written as the sum of $E_{\mathrm{kin}}^{(\mathrm{S})}$ in the CM-system plus the kinetic energy of the total mass $M$ concentrated in the center of mass $S$ (translational energy of the system).
+
+The total motion of the closed system can be divided into a uniform motion of $S$ with the constant velocity $V_{\mathrm{S}}$ and a relative motion of the two particles against $S$.
+\subsection{Reduced Mass}
+We consider two particles with masses $m_{1}$ and $m_{2}$ which interact with each other due to the forces $\boldsymbol{F}_{12}=-\boldsymbol{F}_{21}$. Without other external forces the equations of motion read:
+\begin{equation}
+\frac{\mathrm{d} \boldsymbol{v_{1}}}{\mathrm{~d} t}=\frac{\boldsymbol{F}_{12}}{m_{1}} ; \quad \frac{\mathrm{d} \boldsymbol{v_{2}}}{\mathrm{~d} t}=\frac{\boldsymbol{F}_{21}}{m_{2}}
+\end{equation}
+Subtraction yields
+\begin{equation}
+\frac{\mathrm{d}}{\mathrm{d} t}\left(\boldsymbol{v_{1}}-\boldsymbol{v_{2}}\right)=\left(\frac{1}{m_{1}}+\frac{1}{m_{2}}\right) \boldsymbol{F}_{12},\label{10}
+\end{equation}
+where $\boldsymbol{v_{12}}=\boldsymbol{v_{1}}-\boldsymbol{v_{2}}$ is the relative velocity of the two particles.
+
+Introducing the reduced mass
+\begin{equation}
+\mu=\frac{m_{1} m_{2}}{m_{1}+\mu_{12}}\label{11}
+\end{equation}
+and rewrite $\ref{10}$ we $\mathrm{set}$
+\begin{equation}
+\boldsymbol{F_{12}}=\mu \frac{d \boldsymbol{v_{12}}}{d t}
+\end{equation}
+This means: For the relative motion of the two particles the equation of motion is completely analogous to Nenton's equation for a single particle with the mass $\mu$. This shows the usefulness of defining the reduced mass,
+
+The kinetic energy $E_{\mathrm{kin}}^{\mathrm{S}}$ of the two particles in the CM-system
+\begin{equation}
+\begin{aligned}
+E_{\mathrm{kin}}^{(\mathrm{S})} &\overset{\mathrm{Def}}{=}\sum_{i} \frac{m_{i}}{2} v_{i\mathrm{S}}^{2} \\
+&=\frac{1}{2} \sum m_{i} v_{i}^{2}-\frac{1}{2} M V_{\mathrm{S}}^{2}
+\end{aligned}
+\end{equation}
+is the difference of $E_{\mathrm{kin}}$ in the lab-system and the kinetic energy of the CM.
+Inserting $\boldsymbol{v}_{\mathrm{S}}=(1 / M) \sum m_{i} \boldsymbol{v}_{i}$ gives with $\ref{11}$
+\begin{equation}
+E_{\mathrm{kin}}^{(\mathrm{S})}=\frac{1}{2} \mu v_{12}^{2}
+\end{equation}
+The kinetic energy of a closed system of two particles in the CM-system equals the kinetic energy of a single parrtivle with the reduced mass $\mu$ which moves with the relative velocity $\boldsymbol{v_{12}}$.
+This important relations can be summarized as:
+
+The relative motion of two particles under the influence of their mutual interaction $\boldsymbol{F}_{12}=-\boldsymbol{F}_{21}$ can be reduced to the motion of a single particle with the reduced mass $\mu$ driven by the force $\boldsymbol{F}_{12}$.
+
+This is illustrated in 
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.7]{image//Systems of Point Masses//2}
+	\caption{$\mathbf{a}$ Velocity $V_{S}$ of the CM of a system of two masses with velocities $v_{i} ;$ 
+	\\	
+	$\mathbf{b}$  Reduction of the relative motion of two masses $m_{i}$ to the motion of a single particle with the reduced mass $\mu$ under the action of the force $F_{12}$}
+\end{figure}
+where two masses $m_{1}=m$ and $m_{2}=1.5m$ move around their centre of mass $S$ which moves itself with the velocity $V_{S}$. An example of such a system is double-star system, where two stars with different masses circulate around their comman $C M$.
+
+\chapter{Électrostatique}
+\section{Potentiel électrostatique}
+
+在M点的电势，O是任意选取的电势零点，$\overrightarrow{\mathrm{d}l}$ 可以是{\bf 对应坐标系}的位移微元
+$$
+\boxed{V(M)=\int_{O}^{M}-\overrightarrow{E}\cdot\overrightarrow{\mathrm{d}l}}
+$$
+这是一个intrinsèque 本质的公式，可以统一各个坐标系，但是在不同的坐标系中要具体分析，比如位移微元向量各个坐标系不同，电场向量不同坐标系下表示不同
+
+另外注意：
+$$
+\boxed{\overrightarrow{E}=-\overrightarrow{\mathrm{grad}}V}
+$$
+一个点电荷在某点M处产生的电势：
+$$
+\boxed{V(M)=\frac{q}{4\pi\epsilon_{0}r}\text{ , } avec  \text{ } \lim\limits_{r\rightarrow\infty} V(r)=0}
+$$
+连续分布的电荷在某点M处产生的电势：
+$$
+\boxed{V(M)=\frac{1}{4\pi\epsilon_{0}}\iiint_{P\in\mathcal{V}}\frac{\rho(P)}{PM}\mathrm{d}\tau(P)}
+$$
+类似地，在modélisation surfacique和modélisation linéique 下有：
+$$
+\boxed{V(M)=\frac{1}{4\pi\epsilon_{0}}\iint_{P\in\mathcal{S}}\frac{\sigma(P)}{PM}\mathrm{d}S(P)}
+$$
+
+$$
+\boxed{V(M)=\frac{1}{4\pi\epsilon_{0}}\int_{P\in\mathcal{\mathcal{L}}}\frac{\lambda(P)}{PM}\mathrm{d}l(P)}
+$$
+
+{\bf Equation de Poisson}:
+$$
+\boxed{\Delta V(M)=\text{div}(\overrightarrow{\mathrm{grad}}V)(M)=-\frac{\rho(M)}{\epsilon_0}}
+$$
+若$\rho(M)=0$ ,我们有$\boxed{\Delta V(M)=0}$ ,这是 {\bf l'équation de Laplace}.
+
+\section{Energie potentielle}
+
+一个点电荷$q$在静电场$\overrightarrow{E}$作用下从A移动到B(过程中保持电场本身不受影响，“静”）：
+$$
+\boxed{W_{AB}=q(V(A)-V(B))}
+$$
+{\bf 由于静电力做功与路径无关，所以静电力是保守力}
+
+单位：
+$$
+\boxed{1\text{ }\mathrm{eV}=1,6\times10^{-19}\mathrm{J}}
+$$
+即：{\bf 使一个电子在电势差为1V的两点间移动所需要做的功}
+
+由于静电力是保守力，在外静电场中的一个在M点处的电荷可以被赋予电势能：
+$$
+\boxed{E_p(M)=qV(M)}
+$$
+注意：
+
+{\bf 我们把电势的零点也取作电势能的零点}
+$$
+\boxed{\overrightarrow{F}=-\overrightarrow{\mathrm{grad}}E_p}
+$$
+只有在{\bf 场源}电荷(与定义位置的电荷的运动状态无关)都保持静止的情况下，这个势能才有定义
+
+对于微小的位移：
+$$
+\boxed{\mathrm{d}E_{p}=-\delta W=q\mathrm{d}V}
+$$
+
+\section{ Energie potentielle  de construction d'un système de charges}
+由两个点电荷系统在外界操作下缓慢而平衡地维持静电力状态，从初相对位置到末相对位置系统内部各自对对方作用的静电力做的功之和：
+$$
+\boxed{W=\frac{q_{1}q_{2}}{4\pi\epsilon_{0}}\left(\frac{1}{r_{ini}}-\frac{1}{r_{final}}\right)}
+$$
+
+
+由于这个功的值与路径无关，我们把它联系到一个势能：
+$$
+W=-\Delta E_p=E_{ini}-E_{final}
+$$
+所以：
+$$
+E_p=\frac{q_{1}q_{2}}{4\pi\epsilon_{0}r}+K
+$$
+当两个点电荷彼此相距无穷远时，取$E_{p,\infty}=0$ 。我们有{\bf l'énergie potentielle d'interaction entre $q_1$ et $q_2$}(电荷系统的构成势能):
+$$
+\boxed{E_{p,int}=\frac{q_{1}q_{2}}{4\pi\epsilon_{0}r}}
+$$
+这个能量可以理解为外界操作者将两点电荷从彼此相距无穷远处移到最终相距为r处为克服点电荷对彼此作用力所做的功：
+$$
+\boxed{W_{op}=-W=E_{int}}
+$$
+也可以理解为站在其中一个电荷在另一个电荷产生的电场中的势能：
+$$
+\boxed{E_{int}=q_{1}V_{2}(M_1)=q_{2}V_{1}(M_2)=\frac{1}{2}\left(q_{1}V_{2}(M_1)+q_{2}V_{1}(M_2)\right)}
+$$
+
+推广：
+
+- 连续空间分布的电荷系统：
+$$
+\boxed{E_{int}={\color{red}\frac{1}{2}}\iiint_{P\in\mathcal{V}}\rho(P)V(P)\mathrm{d}\tau(P)}
+$$
+
+-  N个点电荷的系统：
+
+$$
+\boxed{E_{int}={\color{red}\frac{1}{2}}\sum\limits_{i}q_{i}V_{i}}
+$$
+
+
+
+其中$V_i$ 是{\bf 所有其他的电荷在$M_{i}$ 处产生的电势的叠加}        
+
+- {\bf Formule de Stokes}：
+$$
+\boxed{\oint\limits_{C} \overrightarrow{A}\cdot\overrightarrow{\mathrm{d}l}=\iint_{\mathcal{S}(C)}\overrightarrow{\mathrm{rot}}\overrightarrow{A}\cdot\overrightarrow{\mathrm{d}S}}
+$$
+其中$C$是一个闭合且规定了方向的曲线，$\mathcal{S}(C)$ 是一个以该曲线为底面周线的面，它的方向根据右手定则和$C$的方向确定
+
+- 由电势的定义可以推出关于电场的另外两个等价结论：
+$$
+\boxed{\exists V(\overrightarrow{r}),\overrightarrow{E}=-\overrightarrow{\mathrm{grad}}V\Leftrightarrow\oint\limits_{C} \overrightarrow{E}\cdot\overrightarrow{\mathrm{d}l}=0\Leftrightarrow \overrightarrow{\mathrm{rot}}\overrightarrow{E}=\overrightarrow{0}}
+$$
+
+
+其中$\boxed{\overrightarrow{\mathrm{rot}}\overrightarrow{E}=\overrightarrow{0}}$ 又叫{\bf l'équation de Maxwell-Faraday} 
+
+\section{Cartes de champ}
+
+- les lignes de champs sont orthogonales aux équipotentielles 
+
+- les lignes de champs sont orientées suivant le sens des potentiels décroissants
+
+
 \end{document}

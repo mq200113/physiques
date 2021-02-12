@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 20.7) (preloaded format=xelatex 2021.1.28)  10 FEB 2021 16:56
+This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 20.7) (preloaded format=xelatex 2021.1.28)  12 FEB 2021 20:10
 entering extended mode
 **./Physiques.tex
 (Physiques.tex
@@ -717,104 +717,139 @@ LaTeX Font Info:    Trying to load font information for U+stmry on input line 3
 [2
 
 ] (Physiques.toc [3]
-Overfull \hbox (7.19609pt too wide) in paragraph at lines 50--50
+Overfull \hbox (7.19609pt too wide) in paragraph at lines 53--53
  [][] [][]\TU/lmr/m/n/12 The Moving Trihedral(Accompanying Dreibein)-the Frenet
  For- 
  []
 
-)
+LaTeX Font Info:    Font shape `TU/SimSun(0)/m/sl' in size <12> not available
+(Font)              Font shape `TU/SimSun(0)/m/it' tried instead on input line 
+58.
+[4])
 \tf@toc=\write4
 \openout4 = `Physiques.toc'.
 
-LaTeX Font Info:    Font shape `TU/SimSun(0)/m/sl' in size <12> not available
-(Font)              Font shape `TU/SimSun(0)/m/it' tried instead on input line 
-34.
- [4]
+ [5] [6
+
+]
 Chapter 1.
+
+Overfull \hbox (11.44896pt too wide) in paragraph at lines 35--35
+[]\TU/lmr/bx/n/17.28 Transformation of Coordinates (Rotations) 
+ []
+
+File: image//Mathematiques preparations//Transformation of Coordinates (Rotatio
+ns)//1.png Graphic file (type bmp)
+<image//Mathematiques preparations//Transformation of Coordinates (Rotations)//
+1.png>
+[7] [8]
+LaTeX Font Info:    Trying to load font information for U+euf on input line 108
+.
+ (D:\MiKTeX\tex/latex/amsfonts\ueuf.fd
+File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
+) [9] [10]
+Overfull \hbox (24.37392pt too wide) detected at line 222
+[][]
+ []
+
+File: image//Mathematiques preparations//Determinant//1.png Graphic file (type 
+bmp)
+<image//Mathematiques preparations//Determinant//1.png>
+[11]
+File: image//Mathematiques preparations//Determinant//2.png Graphic file (type 
+bmp)
+<image//Mathematiques preparations//Determinant//2.png>
+
+Overfull \hbox (22.999pt too wide) in paragraph at lines 277--278
+ [][] 
+ []
+
+[12] [13] [14
+
+]
+Chapter 2.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [5
-
-]
-File: Electrocinetique cadre et concepts de base//1.jpg Graphic file (type bmp)
-
-<Electrocinetique cadre et concepts de base//1.jpg>
-File: Electrocinetique cadre et concepts de base//2.jpg Graphic file (type bmp)
-
-<Electrocinetique cadre et concepts de base//2.jpg>
+ [15]
+File: image//Electrocinetique cadre et concepts de base//1.jpg Graphic file (ty
+pe bmp)
+<image//Electrocinetique cadre et concepts de base//1.jpg>
+File: image//Electrocinetique cadre et concepts de base//2.jpg Graphic file (ty
+pe bmp)
+<image//Electrocinetique cadre et concepts de base//2.jpg>
 
 Underfull \vbox (badness 2460) has occurred while \output is active []
 
 
-Overfull \hbox (10.40817pt too wide) has occurred while \output is active
-\TU/lmr/m/n/12 6 \TU/lmr/m/sl/12 CHAPTER 1.  ELECTROCINÉTIQUE: CADRE ET CONCEPT
-S DE BASE
- []
-
-[6] [7]
-File: Electrocinetique cadre et concepts de base//3.jpg Graphic file (type bmp)
-
-<Electrocinetique cadre et concepts de base//3.jpg>
-
-Overfull \hbox (43.59232pt too wide) in paragraph at lines 91--92
- [][] 
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Overfull \hbox (10.40817pt too wide) has occurred while \output is active
-\TU/lmr/m/n/12 8 \TU/lmr/m/sl/12 CHAPTER 1.  ELECTROCINÉTIQUE: CADRE ET CONCEPT
-S DE BASE
- []
-
-[8]
-Overfull \vbox (81.88884pt too high) has occurred while \output is active []
-
-
-[9]
 Overfull \hbox (16.28816pt too wide) has occurred while \output is active
-\TU/lmr/m/n/12 10 \TU/lmr/m/sl/12 CHAPTER 1.  ELECTROCINÉTIQUE: CADRE ET CONCEP
+\TU/lmr/m/n/12 16 \TU/lmr/m/sl/12 CHAPTER 2.  ELECTROCINÉTIQUE: CADRE ET CONCEP
 TS DE BASE
  []
 
-[10]
-Chapter 2.
-File: Circuit lineaire du premier ordre//1.png Graphic file (type bmp)
-<Circuit lineaire du premier ordre//1.png>
+[16] [17]
+File: image//Electrocinetique cadre et concepts de base//3.jpg Graphic file (ty
+pe bmp)
+<image//Electrocinetique cadre et concepts de base//3.jpg>
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [11
-
-]
-File: Circuit lineaire du premier ordre//2.jpg Graphic file (type bmp)
-<Circuit lineaire du premier ordre//2.jpg>
-
-Overfull \hbox (19.79274pt too wide) in paragraph at lines 135--136
+Overfull \hbox (43.59232pt too wide) in paragraph at lines 356--357
  [][] 
  []
 
-[12]
-File: Circuit lineaire du premier ordre//3.jpg Graphic file (type bmp)
-<Circuit lineaire du premier ordre//3.jpg>
- [13] [14]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (16.28816pt too wide) has occurred while \output is active
+\TU/lmr/m/n/12 18 \TU/lmr/m/sl/12 CHAPTER 2.  ELECTROCINÉTIQUE: CADRE ET CONCEP
+TS DE BASE
+ []
+
+[18]
+Overfull \vbox (81.88884pt too high) has occurred while \output is active []
+
+
+[19]
+Overfull \hbox (16.28816pt too wide) has occurred while \output is active
+\TU/lmr/m/n/12 20 \TU/lmr/m/sl/12 CHAPTER 2.  ELECTROCINÉTIQUE: CADRE ET CONCEP
+TS DE BASE
+ []
+
+[20]
 Chapter 3.
-[15
+File: image//Circuit lineaire du premier ordre//1.png Graphic file (type bmp)
+<image//Circuit lineaire du premier ordre//1.png>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [21
 
 ]
-Overfull \hbox (16.23663pt too wide) in paragraph at lines 192--195
+File: image//Circuit lineaire du premier ordre//2.jpg Graphic file (type bmp)
+<image//Circuit lineaire du premier ordre//2.jpg>
+
+Overfull \hbox (19.79274pt too wide) in paragraph at lines 400--401
+ [][] 
+ []
+
+[22]
+File: image//Circuit lineaire du premier ordre//3.jpg Graphic file (type bmp)
+<image//Circuit lineaire du premier ordre//3.jpg>
+ [23] [24]
+Chapter 4.
+[25
+
+]
+Overfull \hbox (16.23663pt too wide) in paragraph at lines 457--460
 \TU/lmr/m/n/12 restant dans le domaine des signaux oscillants, \TU/lmr/bx/n/12 
 de valeur moyenne nulle\TU/lmr/m/n/12 .Ainsi,
  []
 
-[16] [17]
-File: Regime sinusoidal force//1.png Graphic file (type bmp)
-<Regime sinusoidal force//1.png>
+[26] [27]
+File: image//Regime sinusoidal force//1.png Graphic file (type bmp)
+<image//Regime sinusoidal force//1.png>
 
-Overfull \hbox (0.94852pt too wide) detected at line 279
+Overfull \hbox (0.94852pt too wide) detected at line 544
 \OML/cmm/m/it/12 p\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 t\OT1/cmr/m/n/12 ) == \OML/
 cmm/m/it/12 u[] []\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 !t \OT1/cmr/m/n/12 + \OML/c
 mm/m/it/12 ^^^[]\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 i[] []\OT1/cmr/m/n/12 (\OML/c
@@ -824,225 +859,262 @@ mm/m/it/12 !t \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 ^^^[]\OT1/cmr/m/n/12 ) = [][[]
 mr/m/n/12 + \OML/cmm/m/it/12 ^^^[]\OT1/cmr/m/n/12 )]
  []
 
-LaTeX Font Info:    Trying to load font information for U+euf on input line 282
-.
-(D:\MiKTeX\tex/latex/amsfonts\ueuf.fd
-File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
-) [18]
-File: Regime sinusoidal force//2.png Graphic file (type bmp)
-<Regime sinusoidal force//2.png>
- [19] [20
+[28]
+File: image//Regime sinusoidal force//2.png Graphic file (type bmp)
+<image//Regime sinusoidal force//2.png>
+ [29] [30
 
 ]
-Chapter 4.
-File: Etude du circuit RLC serie-Resonances//1.jpg Graphic file (type bmp)
-<Etude du circuit RLC serie-Resonances//1.jpg>
+Chapter 5.
+File: image//Etude du circuit RLC serie-Resonances//1.jpg Graphic file (type bm
+p)
+<image//Etude du circuit RLC serie-Resonances//1.jpg>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [21]
-File: Etude du circuit RLC serie-Resonances//2.jpg Graphic file (type bmp)
-<Etude du circuit RLC serie-Resonances//2.jpg>
+ [31]
+File: image//Etude du circuit RLC serie-Resonances//2.jpg Graphic file (type bm
+p)
+<image//Etude du circuit RLC serie-Resonances//2.jpg>
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+[32] [33] [34]
+File: image//Etude du circuit RLC serie-Resonances//3.jpg Graphic file (type bm
+p)
+<image//Etude du circuit RLC serie-Resonances//3.jpg>
 
- [22]
-[23] [24] [25]
-File: Etude du circuit RLC serie-Resonances//3.jpg Graphic file (type bmp)
-<Etude du circuit RLC serie-Resonances//3.jpg>
-
-Overfull \hbox (58.03067pt too wide) in paragraph at lines 437--438
+Overfull \hbox (58.03067pt too wide) in paragraph at lines 702--703
  [][] 
  []
 
-File: Etude du circuit RLC serie-Resonances//4.jpg Graphic file (type bmp)
-<Etude du circuit RLC serie-Resonances//4.jpg>
-[26]
-File: Etude du circuit RLC serie-Resonances//5.jpg Graphic file (type bmp)
-<Etude du circuit RLC serie-Resonances//5.jpg>
- [27] [28]
-File: Etude du circuit RLC serie-Resonances//6.jpg Graphic file (type bmp)
-<Etude du circuit RLC serie-Resonances//6.jpg>
+[35]
+File: image//Etude du circuit RLC serie-Resonances//4.jpg Graphic file (type bm
+p)
+<image//Etude du circuit RLC serie-Resonances//4.jpg>
+File: image//Etude du circuit RLC serie-Resonances//5.jpg Graphic file (type bm
+p)
+<image//Etude du circuit RLC serie-Resonances//5.jpg>
+ [36] [37] [38]
+File: image//Etude du circuit RLC serie-Resonances//6.jpg Graphic file (type bm
+p)
+<image//Etude du circuit RLC serie-Resonances//6.jpg>
 
-Overfull \hbox (3.39732pt too wide) in paragraph at lines 555--556
+Overfull \hbox (3.39732pt too wide) in paragraph at lines 820--821
  [][] 
  []
 
-[29] [30]
-File: Etude du circuit RLC serie-Resonances//7.png Graphic file (type bmp)
-<Etude du circuit RLC serie-Resonances//7.png>
-
-Overfull \hbox (85.86761pt too wide) detected at line 597
+[39]
+File: image//Etude du circuit RLC serie-Resonances//7.png Graphic file (type bm
+p)
+<image//Etude du circuit RLC serie-Resonances//7.png>
+ [40]
+Overfull \hbox (85.86761pt too wide) detected at line 862
 [] \OT1/cmr/m/n/12 = [] = [] = [] = [] = []
  []
 
-[31]
-File: Etude du circuit RLC serie-Resonances//8.png Graphic file (type bmp)
-<Etude du circuit RLC serie-Resonances//8.png>
- [32] [33]
-File: Etude du circuit RLC serie-Resonances//9.png Graphic file (type bmp)
-<Etude du circuit RLC serie-Resonances//9.png>
- [34]
-Overfull \hbox (1.6905pt too wide) in paragraph at lines 708--715
+File: image//Etude du circuit RLC serie-Resonances//8.png Graphic file (type bm
+p)
+<image//Etude du circuit RLC serie-Resonances//8.png>
+[41] [42] [43]
+File: image//Etude du circuit RLC serie-Resonances//9.png Graphic file (type bm
+p)
+<image//Etude du circuit RLC serie-Resonances//9.png>
+
+Overfull \hbox (1.6905pt too wide) in paragraph at lines 973--980
 []\TU/lmr/bx/n/12 L’étude effectuée pour le circuit (R,L,C) série peut être gén
 éral-
  []
 
-[35]
-File: Etude du circuit RLC serie-Resonances//10.png Graphic file (type bmp)
-<Etude du circuit RLC serie-Resonances//10.png>
- [36]
-Chapter 5.
+
+Underfull \vbox (badness 6157) has occurred while \output is active []
+
+ [44]
+File: image//Etude du circuit RLC serie-Resonances//10.png Graphic file (type b
+mp)
+<image//Etude du circuit RLC serie-Resonances//10.png>
+
+[45] [46]
+Chapter 6.
 
 Underfull \vbox (badness 3240) has occurred while \output is active []
 
- [37
+ [47
 
 ]
-Overfull \hbox (4.51794pt too wide) in paragraph at lines 765--766
+Overfull \hbox (4.51794pt too wide) in paragraph at lines 1030--1031
 []$\OML/cmm/m/it/12 c[]$ \TU/lmr/m/n/12 est la composante continue ou la valeur
  moyenne de $\OML/cmm/m/it/12 f$\TU/lmr/m/n/12 ,$\OML/cmm/m/it/12 c[]$ \TU/lmr/
 m/n/12 est l’amplitude
  []
 
 
-Overfull \hbox (23.4092pt too wide) in paragraph at lines 765--766
+Overfull \hbox (23.4092pt too wide) in paragraph at lines 1030--1031
 \TU/lmr/m/n/12 de l’harmonique de rang $\OML/cmm/m/it/12 n$ \TU/lmr/m/n/12 et $
 \OML/cmm/m/it/12 ^^^[]$ \TU/lmr/m/n/12 le déphasage(ou phase à l’origine) de l’
 harmonique
  []
 
-File: Analyse de Fourier d'un signal periodique//1.jpg Graphic file (type bmp)
-<Analyse de Fourier d'un signal periodique//1.jpg>
-[38]
-File: Analyse de Fourier d'un signal periodique//2.jpg Graphic file (type bmp)
-<Analyse de Fourier d'un signal periodique//2.jpg>
+File: image//Analyse de Fourier d'un signal periodique//1.jpg Graphic file (typ
+e bmp)
+<image//Analyse de Fourier d'un signal periodique//1.jpg>
+[48]
+File: image//Analyse de Fourier d'un signal periodique//2.jpg Graphic file (typ
+e bmp)
+<image//Analyse de Fourier d'un signal periodique//2.jpg>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [39]
-[40]
-Chapter 6.
-File: Filtrage//1.jpg Graphic file (type bmp)
-<Filtrage//1.jpg>
+ [49]
+[50]
+Chapter 7.
+File: image//Filtrage//1.jpg Graphic file (type bmp)
+<image//Filtrage//1.jpg>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [41
+ [51
 
 ]
-[42] [43]
-File: Filtrage//2.jpg Graphic file (type bmp)
-<Filtrage//2.jpg>
-File: Filtrage//3.png Graphic file (type bmp)
-<Filtrage//3.png>
+[52] [53]
+File: image//Filtrage//2.jpg Graphic file (type bmp)
+<image//Filtrage//2.jpg>
+File: image//Filtrage//3.png Graphic file (type bmp)
+<image//Filtrage//3.png>
 
-Overfull \hbox (48.43109pt too wide) in paragraph at lines 887--888
+Overfull \hbox (48.43109pt too wide) in paragraph at lines 1152--1153
  [][] 
  []
 
-[44] [45]
-File: Filtrage//4.jpg Graphic file (type bmp)
-<Filtrage//4.jpg>
+[54] [55]
+File: image//Filtrage//4.jpg Graphic file (type bmp)
+<image//Filtrage//4.jpg>
 
-Overfull \hbox (87.92976pt too wide) in paragraph at lines 944--945
+Overfull \hbox (87.92976pt too wide) in paragraph at lines 1209--1210
  [][] 
  []
 
-[46]
-File: Filtrage//5.jpg Graphic file (type bmp)
-<Filtrage//5.jpg>
+[56]
+File: image//Filtrage//5.jpg Graphic file (type bmp)
+<image//Filtrage//5.jpg>
 
-Overfull \hbox (21.68842pt too wide) in paragraph at lines 964--965
+Overfull \hbox (21.68842pt too wide) in paragraph at lines 1229--1230
  [][] 
  []
 
-File: Filtrage//6.jpg Graphic file (type bmp)
-<Filtrage//6.jpg>
+File: image//Filtrage//6.jpg Graphic file (type bmp)
+<image//Filtrage//6.jpg>
 
-Overfull \hbox (87.92976pt too wide) in paragraph at lines 972--973
+Overfull \hbox (87.92976pt too wide) in paragraph at lines 1237--1238
  [][] 
  []
 
 
-Overfull \hbox (133.79424pt too wide) detected at line 980
+Overfull \hbox (133.79424pt too wide) detected at line 1245
 [] \OT1/cmr/m/n/12 = [] = [] = [] = []
  []
 
-[47] [48]
-File: Filtrage//7.jpg Graphic file (type bmp)
-<Filtrage//7.jpg>
+[57] [58]
+File: image//Filtrage//7.jpg Graphic file (type bmp)
+<image//Filtrage//7.jpg>
 
-Overfull \hbox (58.03067pt too wide) in paragraph at lines 1028--1029
+Overfull \hbox (58.03067pt too wide) in paragraph at lines 1293--1294
  [][] 
  []
 
-File: Filtrage//8.jpg Graphic file (type bmp)
-<Filtrage//8.jpg>
+File: image//Filtrage//8.jpg Graphic file (type bmp)
+<image//Filtrage//8.jpg>
 
-Overfull \hbox (87.92976pt too wide) in paragraph at lines 1037--1038
+Overfull \hbox (87.92976pt too wide) in paragraph at lines 1302--1303
  [][] 
  []
 
-[49]
-File: Filtrage//9.jpg Graphic file (type bmp)
-<Filtrage//9.jpg>
+[59]
+File: image//Filtrage//9.jpg Graphic file (type bmp)
+<image//Filtrage//9.jpg>
 
-Overfull \hbox (87.92976pt too wide) in paragraph at lines 1045--1046
+Overfull \hbox (87.92976pt too wide) in paragraph at lines 1310--1311
  [][] 
  []
 
-[50]
-File: Filtrage//10.jpg Graphic file (type bmp)
-<Filtrage//10.jpg>
+[60]
+File: image//Filtrage//10.jpg Graphic file (type bmp)
+<image//Filtrage//10.jpg>
 
-Overfull \hbox (58.03067pt too wide) in paragraph at lines 1108--1109
+Overfull \hbox (58.03067pt too wide) in paragraph at lines 1373--1374
  [][] 
  []
 
-[51]
-File: Filtrage//11.jpg Graphic file (type bmp)
-<Filtrage//11.jpg>
+[61]
+File: image//Filtrage//11.jpg Graphic file (type bmp)
+<image//Filtrage//11.jpg>
 
-Overfull \hbox (49.48105pt too wide) in paragraph at lines 1141--1142
+Overfull \hbox (49.48105pt too wide) in paragraph at lines 1406--1407
  [][] 
  []
 
-[52]
-File: Filtrage//12.jpg Graphic file (type bmp)
-<Filtrage//12.jpg>
+[62]
+File: image//Filtrage//12.jpg Graphic file (type bmp)
+<image//Filtrage//12.jpg>
 
-Overfull \hbox (58.03067pt too wide) in paragraph at lines 1149--1150
+Overfull \hbox (58.03067pt too wide) in paragraph at lines 1414--1415
  [][] 
  []
 
-[53] [54]
-Chapter 7.
+[63] [64]
+Chapter 8.
 
-Overfull \hbox (59.86751pt too wide) in paragraph at lines 1190--1190
+Overfull \hbox (59.86751pt too wide) in paragraph at lines 1455--1455
 []\TU/lmr/bx/n/17.28 The Moving Trihedral(Accompanying Dreibein)-
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1201.
-[55
+
+LaTeX Font Warning: Font shape `U/stmry/b/n' undefined
+(Font)              using `U/stmry/m/n' instead on input line 1472.
+
+[65
+
+] [66]
+File: image//Systems of Point Masses//1.png Graphic file (type bmp)
+<image//Systems of Point Masses//1.png>
+
+Underfull \vbox (badness 2644) has occurred while \output is active []
+
+ [67]
+[68] [69]
+File: image//Systems of Point Masses//2.png Graphic file (type bmp)
+<image//Systems of Point Masses//2.png>
+ [70] [71] [72
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1201.
+Chapter 9.
+[73] [74]
+Overfull \hbox (87.63362pt too wide) has occurred while \output is active
+\TU/lmr/m/sl/12 9.3.   ENERGIE POTENTIELLE DE CONSTRUCTION D’UN SYSTÈME DE CHAR
+GES \TU/lmr/m/n/12 75
+ []
+
+[75]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1730.
+ [76]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1730.
  (Physiques.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1201.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1201.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1730.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1730.
 
 Package rerunfilecheck Info: File `Physiques.out' has not changed.
-(rerunfilecheck)             Checksum: 77303989CB7DFDF3351CFA8BB3178AFD;7415.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1201.
+(rerunfilecheck)             Checksum: BC034E59B825E8019EE0D1EA2652340D;9464.
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1730.
  ) 
 Here is how much of TeX's memory you used:
- 19547 strings out of 414493
- 384881 string characters out of 2910403
- 874794 words of memory out of 3000000
- 36480 multiletter control sequences out of 15000+200000
- 546029 words of font info for 113 fonts, out of 3000000 for 9000
+ 19666 strings out of 414493
+ 392420 string characters out of 2910403
+ 890794 words of memory out of 3000000
+ 36588 multiletter control sequences out of 15000+200000
+ 548801 words of font info for 123 fonts, out of 3000000 for 9000
  1348 hyphenation exceptions out of 8191
- 52i,16n,69p,517b,1623s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 52i,16n,69p,620b,1623s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on Physiques.pdf (55 pages).
+Output written on Physiques.pdf (76 pages).
