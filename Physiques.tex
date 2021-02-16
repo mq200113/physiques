@@ -289,13 +289,190 @@ $U_{i j}=(-1)^{i+j} A_{i j}: \text { algebraic complement to } a_{i j},$
 $A_{i j}:$ subdeterminant $=$ determinant of the $((n-1) \times(n-1))$-matrix originating from $A$ by eliminating the $i$-th row and the $j$-th column.
 \end{thm}
 The calculation of the $(n \times n)$-determinant is replaced by the expansion rule to that of $((n-1) \times(n-1))$-determinants. To the latter one can apply again the expansion theorem thereby reducing the dimensions of the remaining determinants further on. After $(n-2)$-fold expansion $\ref{6}$ comes into operation. The practical evaluation appears to be the simpler the more zeros are in the row of expansion. In this respect, in order to enhance the number of zeros in the row, the calculation rules for equivalent rearrangings of the determinant may be helpful.
+\section{The inner product}
+We may usefully add to the description of vectors in a vector space by defining the inner product of two vectors, denoted in general by $\langle\mathbf{a} \mid \mathbf{b}\rangle,$ which is a scalar function of $\mathbf{a}$ and $\mathbf{ab}$. The scalar or dot product, $\mathbf{a} \cdot \mathbf{b} \equiv|\mathbf{a}||\mathbf{b}| \cos \theta,$ of vectors in real three-dimensional space (where $\theta$ is the angle between the vectors), is an example of an inner product. In effect the notion of an inner product $\langle\mathbf{a} \mid \mathbf{b}\rangle$ is a generalisation of the dot product to more abstract vector spaces. Alternative notations for $\langle\mathbf{a} \mid \mathbf{b}\rangle$ are $(\mathbf{a}, \mathbf{b}),$ or simply $\mathbf{a} \cdot \mathbf{b}$.We note that the scalar product may be extended to vectors with complex components if it is redefined as
+$$
+\mathbf{a} \cdot \mathbf{b}=a_{x}^{*} b_{x}+a_{y}^{*} b_{y}+a_{z}^{*} b_{z}
+$$
+where the asterisk represents the operation of complex conjugation. 
+$$
+\begin{array}{l}
+\text { (i) }\langle\mathbf{a} \mid \mathbf{b}\rangle=\langle\mathbf{b} \mid \mathbf{a}\rangle^{*} \\
+\text { (ii) }\langle\mathbf{a} \mid \lambda \mathbf{b}+\mu \mathbf{c}\rangle=\lambda\langle\mathbf{a} \mid \mathbf{b}\rangle+\mu\langle\mathbf{a} \mid \mathbf{c}\rangle .
+\end{array}
+$$
+We note that in general, for a complex vector space,
+(i) and (ii) imply that
+$$
+\begin{aligned}
+\langle\lambda \mathbf{a}+\mu \mathbf{b} \mid \mathbf{c}\rangle &=\lambda^{*}\langle\mathbf{a} \mid \mathbf{c}\rangle+\mu^{*}\langle\mathbf{b} \mid \mathbf{c}\rangle \\
+\langle\lambda \mathbf{a} \mid \mu \mathbf{b}\rangle &=\lambda^{*} \mu\langle\mathbf{a} \mid \mathbf{b}\rangle
+\end{aligned}
+$$
+
+Following the analogy with the dot product in three-dimensional real space, two vectors in a general vector space are defined to be orthogonal if $\langle\mathbf{a} \mid \mathbf{b}\rangle=0$. Similarly, the norm of a vector a is given by $\|\mathbf{a}\|=\langle\mathbf{a} \mid \mathbf{a}\rangle^{1 / 2}$ and is clearly a generalisation of the length or modulus $|\mathbf{a}|$ of a vector $\mathbf{a}$ in three-dimensional space. In a general vector space,  $\langle\mathbf{a} \mid \mathbf{a}\rangle$ can be positive or negative; however, we shall be primarily concerned with spaces in which $\langle\mathbf{a} \mid \mathbf{a}\rangle \geq 0$ and which are thus said to have a positive semi-definite norm. In such a space $\langle\mathbf{a} \mid \mathbf{a}\rangle=0$ implies $\mathbf{a}=\mathbf{0}$. Let us now introduce into our $N$ -dimensional vector space a basis $\hat{\mathbf{e}}_{1}, \hat{\mathbf{e}}_{2}, \ldots, \hat{\mathbf{e}}_{N}$ that has the desirable property of being orthonormal,
+$$
+\left\langle\hat{\mathbf{e}}_{i} \mid \hat{\mathbf{e}}_{j}\right\rangle=\delta_{i j}.
+$$
+Here $\delta_{i j}$ is the Kronecker delta symbol.
+
+In the above basis we may express any two vectors $\mathbf{a}$ and $\mathbf{b}$ as
+$$
+\mathbf{a}=\sum_{i=1}^{N} a_{i} \hat{\mathbf{e}}_{i}\ ,\  \mathbf{b}=\sum_{i=1}^{N} b_{i} \hat{\mathbf{e}}_{i}
+$$
+Furthermore, in such an orthonormal basis we have, for any $\mathbf{a},$
+\begin{equation}
+\left\langle\hat{\mathbf{e}}_{j} \mid \mathbf{a}\right\rangle=\sum_{i=1}^{N}\left\langle\hat{\mathbf{e}}_{j} \mid a_{i} \hat{\mathbf{e}}_{i}\right\rangle=\sum_{i=1}^{N} a_{i}\left\langle\hat{\mathbf{e}}_{j} \mid \hat{\mathbf{e}}_{i}\right\rangle=a_{j}\label{13}
+\end{equation}
+Thus the components of $\mathbf{a}$ are given by $a_{i}=\left\langle\hat{\mathbf{e}}_{i} \mid \mathbf{a}\right\rangle .$ Note that this is not true unless the basis is orthonormal. We can write the inner product of $\mathbf{a}$ and $\mathbf{b}$ in terms of their components in an orthonormal basis as
+$$
+\begin{aligned}
+\langle\mathbf{a} \mid \mathbf{b}\rangle &=\left\langle a_{1} \hat{\mathbf{e}}_{1}+a_{2} \hat{\mathbf{e}}_{2}+\cdots+a_{N} \hat{\mathbf{e}}_{N} \mid b_{1} \hat{\mathbf{e}}_{1}+b_{2} \hat{\mathbf{e}}_{2}+\cdots+b_{N} \hat{\mathbf{e}}_{N}\right\rangle \\
+&=\sum_{i=1}^{N} a_{i}^{*} b_{i}\left\langle\hat{\mathbf{e}}_{i} \mid \hat{\mathbf{e}}_{i}\right\rangle+\sum_{i=1}^{N} \sum_{j \neq i}^{N} a_{i}^{*} b_{j}\left\langle\hat{\mathbf{e}}_{i} \mid \hat{\mathbf{e}}_{j}\right\rangle \\
+&=\sum_{i=1}^{N} a_{i}^{*} b_{i}
+\end{aligned}
+$$
+This is a generalisation for the dot product of vectors in three-dimensional space.
+
+We may generalise the above to the case where the base vectors $\mathbf{e}_{1}, \mathbf{e}_{2}, \ldots, \mathbf{e}_{N}$ are not orthonormal (or orthogonal). In general we can define the $N^{2}$ numbers
+\begin{equation}
+G_{ij}=\left\langle\mathbf{e}_{i} \mid \mathbf{e}_{j}\right\rangle\label{12}
+\end{equation}
+
+Then, if $\mathbf{a}=\sum_{i=1}^{N} a_{i} \mathbf{e}_{i}$ and $\mathbf{b}=\sum_{i=1}^{N} b_{i} \mathbf{e}_{i},$ the inner product of $\mathbf{a}$ and $\mathbf{b}$ is given by
+$$
+\begin{aligned}
+\langle\mathbf{a} \mid \mathbf{b}\rangle &=\left\langle\sum_{i=1}^{N} a_{i} \mathbf{e}_{i} \mid \sum_{j=1}^{N} b_{j} \mathbf{e}_{j}\right\rangle \\
+&=\sum_{i=1}^{N} \sum_{j=1}^{N} a_{i}^{*} b_{j}\left\langle\mathbf{e}_{i} \mid \mathbf{e}_{j}\right\rangle \\
+&=\sum_{i=1}^{N} \sum_{j=1}^{N} a_{i}^{*} G_{i j} b_{j}
+\end{aligned}
+$$
+We further note that from $\ref{12}$ and the properties of the inner product we require $G_{i j}=G_{j i}^{*} .$ This in turn ensures that $\|\mathbf{a}\|=\langle\mathbf{a} \mid \mathbf{a}\rangle$ is real, since then
+$$
+\langle\mathbf{a} \mid \mathbf{a}\rangle^{*}=\sum_{i=1}^{N} \sum_{j=1}^{N} a_{i} G_{i j}^{*} a_{j}^{*}=\sum_{j=1}^{N} \sum_{i=1}^{N} a_{j}^{*} G_{j i} a_{i}=\langle\mathbf{a} \mid \mathbf{a}\rangle
+$$
+\subsection{Some useful inequalities}
+For a set of vectors forming a linear vector space in which $\langle\mathbf{a} \mid \mathbf{a}\rangle \geq 0$ for all $\mathbf{a},$ the following inequalities are often useful.
+
+(i) {\bf Schwarz's inequality} is the most basic result and states that
+$$
+|\langle\mathbf{a} \mid \mathbf{b}\rangle| \leq\|\mathbf{a}\|\|\mathbf{b}\|,
+$$
+where the equality holds when $\mathbf{a}=\lambda \mathbf{b}$. It is important here to distinguish between the absolute value of a scalar, $|\lambda|,$ and the norm of a vector, $\|\mathbf{a}\| .$ Schwarz's inequality may be proved by considering
+$$
+\begin{aligned}
+\|\mathbf{a}+\lambda \mathbf{b}\|^{2} &=\langle\mathbf{a}+\lambda \mathbf{b} \mid \mathbf{a}+\lambda \mathbf{b}\rangle \\
+&=\langle\mathbf{a} \mid \mathbf{a}\rangle+\lambda\langle\mathbf{a} \mid \mathbf{b}\rangle+\lambda^{*}\langle\mathbf{b} \mid \mathbf{a}\rangle+\lambda \lambda^{*}\langle\mathbf{b} \mid \mathbf{b}\rangle .
+\end{aligned}
+$$
+If we write $\langle\mathbf{a} \mid \mathbf{b}\rangle$ as $|\langle\mathbf{a} \mid \mathbf{b}\rangle| e^{i \alpha}$ then
+$$
+\|\mathbf{a}+\lambda \mathbf{b}\|^{2}=\|\mathbf{a}\|^{2}+|\lambda|^{2}\|\mathbf{b}\|^{2}+\lambda|\langle\mathbf{a} \mid \mathbf{b}\rangle| e^{i \alpha}+\lambda^{*}|\langle\mathbf{a} \mid \mathbf{b}\rangle| e^{-i \alpha}
+$$
+However, $\|\mathbf{a}+\lambda \mathbf{b}\|^{2} \geq 0$ for all $\lambda,$ so we may choose $\lambda=r e^{-i \alpha}$ and require that, for all $r$,
+$$
+0 \leq\|\mathbf{a}+\lambda \mathbf{b}\|^{2}=\|\mathbf{a}\|^{2}+r^{2}\|\mathbf{b}\|^{2}+2 r|\langle\mathbf{a} \mid \mathbf{b}\rangle| .
+$$
+This means that the quadratic equation in $r$ formed by setting the RHS equal to zero must have no real roots. This, in turn, implies that $$
+4|\langle\mathbf{a} \mid \mathbf{b}\rangle|^{2} \leq 4\|\mathbf{a}\|^{2}\|\mathbf{b}\|^{2}
+$$
+which, on taking the square root (all factors are necessarily positive) of both sides, gives Schwarz's inequality.
+
+(ii) The {\bf triangle inequality} states that
+$$
+\|\mathbf{a}+\mathbf{b}\| \leq\|\mathbf{a}\|+\|\mathbf{b}\|
+$$
+and may be derived from the properties of the inner product and Schwarz's inequality as follows. Let us first consider
+$$
+\|\mathbf{a}+\mathbf{b}\|^{2}=\|\mathbf{a}\|^{2}+\|\mathbf{b}\|^{2}+2 \operatorname{Re}\langle\mathbf{a} \mid \mathbf{b}\rangle \leq\|\mathbf{a}\|^{2}+\|\mathbf{b}\|^{2}+2|\langle\mathbf{a} \mid \mathbf{b}\rangle|
+$$
+Using Schwarz's inequality we then have
+$$
+\|\mathbf{a}+\mathbf{b}\|^{2} \leq\|\mathbf{a}\|^{2}+\|\mathbf{b}\|^{2}+2\|\mathbf{a}\|\|\mathbf{b}\|=(\|\mathbf{a}\|+\|\mathbf{b}\|)^{2}
+$$
+which, on taking the square root, gives the triangle inequality.
+
+(iii){\bf Bessel's inequality} requires the introduction of an orthonormal basis $\hat{\mathbf{e}}_{i}$ $i=1,2, \ldots, N$ into the $N$-dimensional vector space; it states that
+\begin{equation}
+\boxed{\|\mathbf{a}\|^{2} \geq \sum_{i}\left|\left\langle\hat{\mathbf{e}}_{i} \mid \mathbf{a}\right\rangle\right|^{2}}
+\end{equation}
 
 
+where the equality holds if the sum includes all $N$ basis vectors. If not all the basis vectors are included in the sum then the inequality results (though of course the equality remains if those basis vectors omitted all have $a_{i}=0$ ). Bessel's inequality can also be written
+$$
+\langle\mathbf{a} \mid \mathbf{a}\rangle \geq \sum_{i}\left|a_{i}\right|^{2}
+$$
+where the $a_{i}$ are the components of a in the orthonormal basis. From $\ref{13}$ these are given by $a_{i}=\left\langle\hat{\mathbf{e}}_{i} \mid \mathbf{a}\right\rangle .$ The above may be proved by considering
+$$
+\left\|\mathbf{a}-\sum_{i}\left\langle\hat{\mathbf{e}}_{i} \mid \mathbf{a}\right\rangle \hat{\mathbf{e}}_{i}\right\|^{2}=\left\langle\mathbf{a}-\sum_{i}\left\langle\hat{\mathbf{e}}_{i} \mid \mathbf{a}\right\rangle \hat{\mathbf{e}}_{i} \mid \mathbf{a}-\sum_{j}\left\langle\hat{\mathbf{e}}_{j} \mid \mathbf{a}\right\rangle \hat{\mathbf{e}}_{j}\right\rangle
+$$
+Expanding out the inner product and using $\left\langle\hat{\mathbf{e}}_{i} \mid \mathbf{a}\right\rangle^{*}=\left\langle\mathbf{a} \mid \hat{\mathbf{e}}_{i}\right\rangle,$ we obtain
+$$
+\left\|\mathbf{a}-\sum_{i}\left\langle\hat{\mathbf{e}}_{i} \mid \mathbf{a}\right\rangle \hat{\mathbf{e}}_{i}\right\|^{2}=\langle\mathbf{a} \mid \mathbf{a}\rangle-2 \sum_{i}\left\langle\mathbf{a} \mid \hat{\mathbf{e}}_{i}\right\rangle\left\langle\hat{\mathbf{e}}_{i} \mid \mathbf{a}\right\rangle+\sum_{i} \sum_{j}\left\langle\mathbf{a} \mid \hat{\mathbf{e}}_{i}\right\rangle\left\langle\hat{\mathbf{e}}_{j} \mid \mathbf{a}\right\rangle\left\langle\hat{\mathbf{e}}_{i} \mid \hat{\mathbf{e}}_{j}\right\rangle
+$$
+Now $\left\langle\hat{\mathbf{e}}_{i} \mid \hat{\mathbf{e}}_{j}\right\rangle=\delta_{i j},$ since the basis is orthonormal, and so we find
+$$
+0 \leq\left\|\mathbf{a}-\sum_{i}\left\langle\hat{\mathbf{e}}_{i} \mid \mathbf{a}\right\rangle \hat{\mathbf{e}}_{i}\right\|^{2}=\|\mathbf{a}\|^{2}-\sum_{i}\left|\left\langle\hat{\mathbf{e}}_{i} \mid \mathbf{a}\right\rangle\right|^{2},
+$$
+which is Bessel's inequality.
 
+We take this opportunity to mention also
 
+(iv) {\bf the parallelogram equality}
+$$
+\|\mathbf{a}+\mathbf{b}\|^{2}+\|\mathbf{a}-\mathbf{b}\|^{2}=2\left(\|\mathbf{a}\|^{2}+\|\mathbf{b}\|^{2}\right)
+$$
+which may be proved straightforwardly from the properties of the inner product.
+\section{Partial differentiation}
+\subsection{Change of variables}
+It is sometimes necessary or desirable to make a change of variables during the course of an analysis, and consequently to have to change an equation expressed in one set of variables into an equation using another set. The same situation arises if a function $f$ depends on one set of variables $x_{i}$, so that $f=f\left(x_{1}, x_{2}, \ldots, x_{n}\right)$ but the $x_{i}$ are themselves functions of a further set of variables $u_{j}$ and given by the equations
+$$
+x_{i}=x_{i}\left(u_{1}, u_{2}, \ldots, u_{m}\right)
+$$
+For each different value of $i, x_{i}$ will be a different function of the $u_{j} .$ In this case the chain rule becomes
+\begin{equation}
+\frac{\partial f}{\partial u_{j}}=\sum_{i=1}^{n} \frac{\partial f}{\partial x_{i}} \frac{\partial x_{i}}{\partial u_{j}}, \quad j=1,2, \ldots, m\label{14}
+\end{equation}and is said to express a change of variables. In general the number of variables in each set need not be equal, i.e. $m$ need not equal $n,$ but if both the $x_{i}$ and the $u_{i}$ are sets of independent variables then $m=n$
 
+Plane polar coordinates, $\rho$ and $\phi,$ and Cartesian coordinates, $x$ and $y,$ are related by the expressions $x=\rho \cos \phi,y=\rho \sin \phi$. An arbitrary function $f(x, y)$ can be re-expressed as a function $g(\rho, \phi) .$ Transform the expression
+$$
+\frac{\partial^{2} f}{\partial x^{2}}+\frac{\partial^{2} f}{\partial y^{2}}
+$$
+into one in $\rho$ and $\phi$.
 
-
+We first note that $\rho^{2}=x^{2}+y^{2}, \phi=\tan ^{-1}(y / x)$. We can now write down the four partial derivatives
+$$
+\begin{array}{ll}
+\frac{\partial \rho}{\partial x}=\frac{x}{\left(x^{2}+y^{2}\right)^{1 / 2}}=\cos \phi, &\frac{\partial \phi}{\partial x}=\frac{-\left(y / x^{2}\right)}{1+(y / x)^{2}}=-\frac{\sin \phi}{\rho} \\
+\frac{\partial \rho}{\partial y}=\frac{y}{\left(x^{2}+y^{2}\right)^{1 / 2}}=\sin \phi, & \frac{\partial \phi}{\partial y}=\frac{1 / x}{1+(y / x)^{2}}=\frac{\cos \phi}{\rho}
+\end{array}
+$$
+Thus, from $\ref{14}$, we may write
+$$
+\frac{\partial}{\partial x}=\cos \phi \frac{\partial}{\partial \rho}-\frac{\sin \phi}{\rho} \frac{\partial}{\partial \phi}, \quad \frac{\partial}{\partial y}=\sin \phi \frac{\partial}{\partial \rho}+\frac{\cos \phi}{\rho} \frac{\partial}{\partial \phi}
+$$
+Now it is only a matter of writing
+$$
+\begin{aligned}
+\frac{\partial^{2} f}{\partial x^{2}}=& \frac{\partial}{\partial x}\left(\frac{\partial f}{\partial x}\right)=\frac{\partial}{\partial x}\left(\frac{\partial}{\partial x}\right) f \\
+=&\left(\cos \phi \frac{\partial}{\partial \rho}-\frac{\sin \phi}{\rho} \frac{\partial}{\partial \phi}\right)\left(\cos \phi \frac{\partial}{\partial \rho}-\frac{\sin \phi}{\rho} \frac{\partial}{\partial \phi}\right) g \\
+=&\left(\cos \phi \frac{\partial}{\partial \rho}-\frac{\sin \phi}{\rho} \frac{\partial}{\partial \phi}\right)\left(\cos \phi \frac{\partial g}{\partial \rho}-\frac{\sin \phi}{\rho} \frac{\partial g}{\partial \phi}\right) \\
+=& \cos ^{2} \phi \frac{\partial^{2} g}{\partial \rho^{2}}+\frac{2 \cos \phi \sin \phi}{\rho^{2}} \frac{\partial g}{\partial \phi}-\frac{2 \cos \phi \sin \phi}{\rho} \frac{\partial^{2} g}{\partial \phi \partial \rho} \\
+&+\frac{\sin ^{2} \phi}{\rho} \frac{\partial g}{\partial \rho}+\frac{\sin ^{2} \phi}{\rho^{2}} \frac{\partial^{2} g}{\partial \phi^{2}}
+\end{aligned}
+$$
+and a similar expression for $\partial^{2} f / \partial y^{2}$,
+$$
+\begin{aligned}
+\frac{\partial^{2} f}{\partial y^{2}}=&\left(\sin \phi \frac{\partial}{\partial \rho}+\frac{\cos \phi}{\rho} \frac{\partial}{\partial \phi}\right)\left(\sin \phi \frac{\partial}{\partial \rho}+\frac{\cos \phi}{\rho} \frac{\partial}{\partial \phi}\right) g \\
+=& \sin ^{2} \phi \frac{\partial^{2} g}{\partial \rho^{2}}-\frac{2 \cos \phi \sin \phi}{\rho^{2}} \frac{\partial g}{\partial \phi}+\frac{2 \cos \phi \sin \phi}{\rho} \frac{\partial^{2} g}{\partial \phi \partial \rho} \\
+&+\frac{\cos ^{2} \phi}{\rho} \frac{\partial g}{\partial \rho}+\frac{\cos ^{2} \phi}{\rho^{2}} \frac{\partial^{2} g}{\partial \phi^{2}}
+\end{aligned}.
+$$
+When these two expressions are added together the change of variables is complete and When these two expressions are added together the change of variables is complete and we obtain
+$$
+\frac{\partial^{2} f}{\partial x^{2}}+\frac{\partial^{2} f}{\partial y^{2}}=\frac{\partial^{2} g}{\partial \rho^{2}}+\frac{1}{\rho} \frac{\partial g}{\partial \rho}+\frac{1}{\rho^{2}} \frac{\partial^{2} g}{\partial \phi^{2}}.
+$$
 	\chapter{Electrocinétique: cadre et concepts de base}
 	\section{Notions sur les phénomènes de conduction}
 	\subsection{Sens conventionnel du courant électrique}

@@ -1,0 +1,66 @@
+\contentsline {chapter}{\numberline {1}Mathématiques préparations}{7}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Transformation of Coordinates (Rotations)}{7}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Determinants}{10}{section.1.2}%
+\contentsline {section}{\numberline {1.3}The inner product}{14}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Some useful inequalities}{16}{subsection.1.3.1}%
+\contentsline {section}{\numberline {1.4}Partial differentiation}{18}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1}Change of variables}{18}{subsection.1.4.1}%
+\contentsline {chapter}{\numberline {2}Electrocinétique: cadre et concepts de base}{21}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Notions sur les phénomènes de conduction}{21}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Sens conventionnel du courant électrique}{21}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Courant électrique}{22}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}Courant dans un circuit}{22}{subsection.2.1.3}%
+\contentsline {paragraph}{Ordre de grandeur de la vitesse des porteurs de charge}{22}{section*.5}%
+\contentsline {subsection}{\numberline {2.1.4}有源二端元件}{22}{subsection.2.1.4}%
+\contentsline {paragraph}{理想电源}{22}{section*.6}%
+\contentsline {paragraph}{实际电源}{22}{section*.7}%
+\contentsline {section}{\numberline {2.2}求解电路的基本定律}{26}{section.2.2}%
+\contentsline {paragraph}{基尔霍夫定律}{26}{section*.11}%
+\contentsline {subparagraph}{节点定律(Loi des nœud )}{26}{section*.12}%
+\contentsline {subparagraph}{回路电压定律(Loi des mailles)}{26}{section*.13}%
+\contentsline {chapter}{\numberline {3}Circuit linéaire du premier ordre}{27}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Exemple expérimental}{27}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Montage}{27}{subsection.3.1.1}%
+\contentsline {section}{\numberline {3.2}暂态}{28}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}RC电路}{28}{subsection.3.2.1}%
+\contentsline {paragraph}{电容的欧姆定律}{28}{section*.15}%
+\contentsline {subsubsection}{RC串联充电}{28}{section*.16}%
+\contentsline {chapter}{\numberline {4}Régime sinusoïdal forcé}{31}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Représentation complexe du signal sinusoïdale}{31}{section.4.1}%
+\contentsline {paragraph}{Dérivation}{32}{section*.19}%
+\contentsline {paragraph}{Intégration: primitive sinusoïdale}{32}{section*.20}%
+\contentsline {paragraph}{三角信号函数乘法}{33}{section*.21}%
+\contentsline {section}{\numberline {4.2}Utilisation du plan complexe}{33}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Puissance moyenne–Facteur de puissance}{34}{section.4.3}%
+\contentsline {chapter}{\numberline {5}Étude du circuit RLC série-Résonances}{37}{chapter.5}%
+\contentsline {section}{\numberline {5.1}电流的谐振}{38}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}得到电流的复振幅关于约化角频率的函数}{38}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}振幅与相位差关于约化角频率的函数图像}{41}{subsection.5.1.2}%
+\contentsline {section}{\numberline {5.2}电荷的谐振}{46}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Circuits linéaires en régime sinusoïdal}{51}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Régime forcé d’un circuit linéaire}{51}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Étude du régime sinusoïdal forcé}{51}{subsection.5.3.2}%
+\contentsline {chapter}{\numberline {6}Analyse de Fourier d'un signal périodique}{53}{chapter.6}%
+\contentsline {chapter}{\numberline {7}Filtrage}{57}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Fonction de transfert}{57}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Diagramme de Bode}{58}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Filtres du premier ordre}{59}{section.7.3}%
+\contentsline {subsection}{\numberline {7.3.1}Filtre passe-bas}{60}{subsection.7.3.1}%
+\contentsline {section}{\numberline {7.4}Filtres du deuxième ordre}{63}{section.7.4}%
+\contentsline {subsection}{\numberline {7.4.1}Filtre passe-haute}{63}{subsection.7.4.1}%
+\contentsline {subsection}{\numberline {7.4.2}Filtre coupe-bande}{65}{subsection.7.4.2}%
+\contentsline {subsection}{\numberline {7.4.3}Filtres d'ordre plus élevé}{68}{subsection.7.4.3}%
+\contentsline {section}{\numberline {7.5}Mise en cascade de filtres}{68}{section.7.5}%
+\contentsline {subsection}{\numberline {7.5.1}Impédances d'entrée et de sortie}{68}{subsection.7.5.1}%
+\contentsline {subsection}{\numberline {7.5.2}Mise en cascade}{69}{subsection.7.5.2}%
+\contentsline {chapter}{\numberline {8}Classical Mechanics}{71}{chapter.8}%
+\contentsline {section}{\numberline {8.1}The Moving Trihedral(Accompanying Dreibein)-the Frenet Formulas}{71}{section.8.1}%
+\contentsline {paragraph}{Darbaux rotation vecteur}{71}{section*.48}%
+\contentsline {section}{\numberline {8.2}Systems of Point Masses;Collisions}{72}{section.8.2}%
+\contentsline {subsection}{\numberline {8.2.1}Centre of Mass}{72}{subsection.8.2.1}%
+\contentsline {subsection}{\numberline {8.2.2}Reduced Mass}{75}{subsection.8.2.2}%
+\contentsline {chapter}{\numberline {9}Électrostatique}{79}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Potentiel électrostatique}{79}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Energie potentielle}{80}{section.9.2}%
+\contentsline {section}{\numberline {9.3} Energie potentielle de construction d'un système de charges}{81}{section.9.3}%
+\contentsline {section}{\numberline {9.4}Cartes de champ}{82}{section.9.4}%
